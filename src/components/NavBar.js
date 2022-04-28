@@ -1,18 +1,23 @@
+import Logo from '../logo.svg'
+
 const NavBar = () => {
 
-    const estilos = {
-        border: 'solid yellow 1px',
-        color: 'grey'
-    }
     return (
-        <div>
-            <li style={estilos}>Inicio</li>
-            <li style={estilos}>Productos</li>
-            <li style={estilos}>Preguntas Frecuentes</li>
-            <li style={estilos}>¿Qué talle soy?</li>
-            <li style={estilos}>Contacto</li>
+        <header>
+            <div className='d-flex justify-content-center'>
+                <img src={Logo} width="50" height="50" alt='Foxie' title='Foxie' />
 
-        </div>
+                <i className="bi bi-cart position-absolute text-white" style={{ top: 15, right: 30 }}></i>
+            </div>
+
+            <div className='d-flex justify-content-around'>
+                <span>Inicio</span>
+                <span>Productos</span>
+                <span>Preguntas Frecuentes</span>
+                <span>¿Qué talle soy?</span>
+                <span>Contacto</span>
+            </div>
+        </header>
     )
 }
 

@@ -6,11 +6,9 @@ function App() {
     <div className="App">
       <NavBar />
 
-      <header className="App-header">
-        <p>
-          <h1>Tienda Foxie</h1>
-        </p>
-      </header>
+      <main className="App-header">
+        <h1>Tienda Foxie</h1>
+      </main>
     </div>
   );
 }
