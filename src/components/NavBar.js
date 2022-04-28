@@ -1,4 +1,5 @@
 import Logo from '../logo.svg'
+import CartWidget from './CartWidget'
 
 const NavBar = () => {
 
@@ -7,7 +8,7 @@ const NavBar = () => {
             <div className='d-flex justify-content-center'>
                 <img src={Logo} width="50" height="50" alt='Foxie' title='Foxie' />
 
-                <i className="bi bi-cart position-absolute text-white" style={{ top: 15, right: 30 }}></i>
+                <CartWidget />
             </div>
 
             <div className='d-flex justify-content-around'>
